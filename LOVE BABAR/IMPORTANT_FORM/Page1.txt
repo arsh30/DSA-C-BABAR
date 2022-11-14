@@ -1,0 +1,15 @@
+1) to print Reverse -> (ans = digit * 10 ^ i ) + ans
+2) Reverse Order print -> ans = ans * 10 + digit 
+
+3) Agr kisi number ko '&' 1 ke sth => If op is 1 then number is odd otherwise even 
+    & -> Jab And krege to pehele number ko binary me convert krega and then calculation 
+
+4) Note -> Jb last digit nikalte hai to 
+    n % 10 ; and then number ko chta krege n = n / 10
+
+    Jb bits pr kaam krege to eg: n = 5; 
+    0000...101
+    toh isme left shift ya right shift krte hai 
+
+5) left shift -> multiply by 2
+6) right shift -> divide by 2
