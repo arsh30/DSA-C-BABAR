@@ -6,7 +6,7 @@ Approach ->
 
 for(0 ---> n - 1){
     // check krege hmesha abhi next element par jana hoga kabhi ki udr jana valid hai
-    if(Arr[i + 1] < n){
+    if(i + 1 < n){
         swap(arr[i], arr[i+1])
     }
 
