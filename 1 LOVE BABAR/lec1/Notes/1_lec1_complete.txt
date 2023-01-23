@@ -1,0 +1,66 @@
+ques 1) sum of 2 nos 
+sol 1) - take input of 2 no a and b;
+       - intialise sum  = a + b;
+       - print sum 
+
+
+ques 2) find simple Interest? (formula for si = > (P * R * T) / 100)
+sol 2) 
+    -take input of 3 variables p ,r , t;
+    - int SI = p * r * t / 100;
+    - print SI 
+
+
+ques 3) Average of 3 nos ? (formula for find avg -> add of all number) / kitne number ko upr add kra hai 
+sol 3) - take input of 3 number ie a , b, c;
+    - int avg = a + b + c / 3;
+    - print avg 
+
+
+ques 4) check a less than b, if yes than print yes else No 
+sol 4) - take 2 input variables a and b;
+    
+    - if (a < b) { 
+        Means a less than b;
+        cout << yes << " " ;
+        }else {
+            means bda hai number 
+            cout << No <<" ";
+        }
+    - end program
+
+
+
+ques 5) Odd and Even ? formula (n % 2 == 0) toh number is even agr (n % 2 != 0) toh odd hai
+sol 5) - take a number input
+    - if (n % 2 == 0) { cout << "even no"; }
+    - else { cout << "Odd no"; }
+    - end 
+
+
+ques 6) check given no is +Ve, -ve or 0 
+sol 6) - take a num as input; int n; cin >> n;
+       - if (n > 0){ cout << "No is +Ve"; }
+       - else if (n < 0){ cout << "No is -Ve"; }
+       - else { cout << "No is 0"; }
+       - finish 
+
+
+ques 7) chech given triagnle is valid or not ?
+
+NOTE -> condition for a valid traingle ->
+ 1) a + b > c
+ 2) b + c > a 
+ 3) c + a > b 
+ Agr upr wali teeno me se Koi 1 bhi true hoga toh triangle is valid  
+
+Sol 7) take three input variables -> int a, b, c; cin >> a >> b >> c;
+    - if (a + b > c) { cout <<" valid triagle"; }
+    - else if (b + c > a) { cout <<" valid triagle"; }
+    - else if (c + a > b) { cout <<" valid triagle"; }
+    - else  { cout <<"Not a valid triagle"; }
+
+
+LOOPS -----------> 
+
+Ques 8) 

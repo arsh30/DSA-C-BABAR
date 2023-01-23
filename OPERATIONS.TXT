@@ -1,0 +1,115 @@
+1) Arrays 
+how to make -> 
+int n;
+cin>> n;
+int arr[n] = {0};
+
+or 
+
+for(int i = 0; i < n ;i++){
+    cin >> arr[i];
+}
+
+2) How to access element 
+arr[idx]; // to access the element 
+
+3) How to insert and update the element 
+sol) arr[idx] = '3';
+
+4) 
+-----------------------------------------
+character array -> 
+1) How to declare -> char ch[30] = "arshdeep singh";
+2) to print the array -> cout << ch; 
+3) to access the character ch[idx];
+
+---------------------------------------
+ Strings in c++  -> String is a basically a character array 
+
+ strings operations 
+ 1) Iterator return -> s.begin(), s.end()
+ 2) length -> .length()
+ 3) empty -> empty() -> check krega ki string empty hai ya nahi
+ 
+ 4) str[idx] -> to access the character
+ 5) str.push_back() -> append to a string 
+ 6) str.pop_back() -> remove last character 
+ 7) str.substr(starting idx, ending idx) -> to get the substrings
+ 8) str1.comapre(str2)
+ 9) str.back() -> access the last character
+ 10) str.front() -> access the first character 
+ 11) str.size() -> to get the size 
+
+ 12) str.find("jo search krna hai string me") -> it is used for finding both string and 
+    character
+     -> str.find (jo search krna hai , kidr se start krna h)
+     -> It return the index number and starts from the left side 
+     -> it return -1 if not found, and it is case sensitive
+
+ 13) str.erase(startingIdx, count of element to be deleted)
+
+
+ [note -> in c++ strings and stack are almost same]
+ ------------------------------------
+
+ NOTE ->
+ cin -> ye apna execution stop krta hai jb space,tab,\n aaye 
+ to agr hume puri string input leni ho toh kese lenge?
+ eg: my name is Khan
+ -> cin.getLline(str,len); // len of the string 
+
+ NOTE -> IN C++ , STRINGS ARE SAVE SAME AS CHARACTER ARRAY 
+ ---------------------------------------------------------------------------
+
+ 2D ARRAYS -> 
+
+1) Visualize kro 2d array -> but memory me store hota hai "LINEAR ARRAY" 
+2) So 1 way that we Visualize in 2D array and MATHEMATICAL FORMULA se 1D Array me MAP krwalege 
+   FORMULA -> totalColumn * i + j; // i row and j = column 
+
+3) Ex: suppose 1d array me map krwana hai , by visulaize 2d array [3 * 3] -> 
+    on 2nd row and 1st column   -> Map this on 1d array 
+    FORMULA -> 3 * 2(2nd row) + 1(1st column) => 3 * 2 + 1 = 7 index
+
+4) So overall visulaize 2d Array me krlo and but It is STORE 1D in MEMORY 
+
+5) CREATION OF 2D ARRAY 
+-> normal linear array create -> int arr[10]; -> [ , , , , ,]
+-> 2d Array creation -> int arr[3][3] -> 3,3 isse ik matrix bnega 3 * 3 
+    Internal working me Linear Array me hi store hora hoga
+
+6) HOW TO TAKE INPUT 
+-> input in 1d Array -> cin >> arr[i];
+-> input in 2d Array -> cin >> arr[i][j]; // where I and J are indexes 
+
+7) HOW TO DISPLAY OUTPUT
+-> input in 1d Array -> cout << arr[i];
+-> input in 2d Array -> cout << arr[i][j]; // where I and J are indexes 
+-> eg: arr[2][1] -> means 2nd row 1st column index 
+
+-------------------------------------------------------
+VERY IMPORTANT CONCEPT
+
+-> 1d to 2d -> formula -> arr[mid / totalColumn] [mid % totalColumn]
+-> 2d to 1d mapping ->  FORMULA -> totalColumn * i + j; // i row and j = column 
+
+
+- EG: In 1d we have -> 1 3 5 7 , 10 11 16 20, 23 30 34 60
+- We find mid ie 16 = 6 index
+- yeh 1d me hai, isko 2d me map krwana hai , jisse 16 element mil jaye , how we do
+- 2d me access arr [rowIdx] [colIdx]
+
+- so How we do ?
+-1) 6 (index in 1d array jisko map krwana hai ) / 4 (total no of columns) = 6 / 4 = 1; [Means 1st row me hai 2d array]
+    eg: 9(index of 30 in 1d) / 4(totalColum) = 9 / 4 = 2 [means 2nd row me hai]
+
+-2) Ab uss row me Kitni aage kaise find krre? -> BY DOING MOD
+    % totalNo of column, to vo 0 , 1, 2, 3 ke bheech  bss nikal gya
+     => IT GIVE COLUMN INDEX
+
+NOTE -> Agr kisi bhi number ko mod krege 'N' ke sth to  0 TO N-1 ke bheech hi aayega
+
+ ---------------------------------------------------------------------------
+ 
+  
+
